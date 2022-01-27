@@ -10,7 +10,7 @@ const Header = () => {
     
     return (
         <div style={{position: 'sticky', top: '0', backgroundColor: 'rgba(255, 255, 255, 0.6)', zIndex: '2'}} >
-            <Navbar style={{backgroundColor: 'rgba(94, 73, 53, 0.3)', zIndex: '2'}} className="py-3" collapseOnSelect expand="md">
+            <Navbar style={{backgroundColor: 'rgba(0, 0, 0, 0.1)', zIndex: '2'}} className="py-3" collapseOnSelect expand="md">
                 <Container>
                 <Navbar.Brand as={NavLink} exact to="/">
                     {/* <img
