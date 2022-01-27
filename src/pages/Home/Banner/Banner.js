@@ -10,7 +10,7 @@ const Banner = () => {
                 <Carousel.Item interval={8000} style={{transition: 'all 2s ease-in-out', background: `rgba(0, 0, 0, 0.75) url('https://i.ibb.co/bgFhS7J/3.jpg') center center fixed`, backgroundSize: 'cover', backgroundBlendMode: 'darken', borderLeft: '2px solid black', borderRight: '2px solid black'}}>
                     <Container style={{minHeight: '505px'}} className="text-light d-flex justify-content-center align-items-center">
                         <div className="text-center">
-                            <p className="mb-0">We call all travelers, Davasko!</p>
+                            <p className="mb-0">We call all the travelers, Davasko!</p>
                             <h1 className="mt-5 mb-4">Welcome to <span className="brand">DavaskoTales</span></h1>
                             <p>Your Travel Blog Sharing Platform</p>
                             <Link style={{textDecoration: 'unset', color: 'unset'}} to="/#tales"><button className="my-4 btn-explore rounded">Read Tales!</button></Link>
