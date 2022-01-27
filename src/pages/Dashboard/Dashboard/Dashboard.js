@@ -3,7 +3,8 @@ import { useRouteMatch, Switch, Route } from 'react-router-dom';
 import DashHeader from '../DashHeader/DashHeader';
 import DashHome from '../DashPages/DashHome/DashHome';
 import MakeAdmin from '../DashPages/MakeAdmin/MakeAdmin';
-import AdminRoute from '../../AdminRoute/AdminRoute';
+import AdminRoute from '../../../AdminRoute/AdminRoute';
+import Header from '../../Shared/Header/Header';
 
 const Dashboard = () => {
     const { path, url } = useRouteMatch();
