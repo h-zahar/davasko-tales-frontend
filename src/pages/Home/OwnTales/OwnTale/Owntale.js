@@ -8,7 +8,7 @@ const OwnTale = (props) => {
         if(!window.confirm('Are you sure to cancel?')) {
             return;
         }
-        fetch(`http://localhost:5000/images/${id}`, {
+        fetch(`http://localhost:5000/blogs/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'aplplication/json'
