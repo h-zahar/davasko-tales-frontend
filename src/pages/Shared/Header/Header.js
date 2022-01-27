@@ -32,18 +32,8 @@ const Header = () => {
                             }
 
                             {
-                                user?.email &&
-                                <Nav.Link as={NavLink} exact to="/orders">Orders</Nav.Link>
-                            }
-
-                            {
-                                user?.email &&
-                                <Nav.Link as={NavLink} exact to="/manage">Manage</Nav.Link>
-                            }
-
-                            {
-                                user?.email &&
-                                <Nav.Link as={NavLink} exact to="/add">Add</Nav.Link>
+                                !isLoading &&
+                                <Nav.Link as={NavLink} exact to="/own">Own Tales )</Nav.Link>
                             }
 
                             {
@@ -52,15 +42,21 @@ const Header = () => {
                                     <p className="mx-0 my-2 px-2 text-success"><span>{user?.displayName}</span></p>
                                 </div>
                             }
-                        
-                            {
-                                (!isLoading && user?.email) &&
-                                <button className="rounded" style={{backgroundColor: 'rgba(255, 255, 255, 0.5)', border: '1px solid rgba(0, 0, 0, 0.33)', marginLeft: '1rem', marginRight: '1rem'}} onClick={logOut} className="btn-logout">Logout</button>
-                            }
 
                             {
                                 (!isLoading && !user?.email) &&
                                 <Nav.Link as={NavLink} exact to="/login">Login</Nav.Link>
+                            }
+
+
+                            {
+                               (!isLoading && user?.email) &&
+                               <Nav.Link as={NavLink} exact to="/dashboard">Dashboard</Nav.Link> 
+                            }
+                        
+                            {
+                                (!isLoading && user?.email) &&
+                                <button className="rounded" style={{backgroundColor: 'rgba(255, 255, 255, 0.5)', border: '1px solid rgba(0, 0, 0, 0.33)', marginLeft: '1rem', marginRight: '1rem'}} onClick={logOut} className="btn-logout">Logout</button>
                             }
 
                         </Nav>

@@ -4,6 +4,7 @@ import Home from './pages/Home/Home/Home';
 import TellATale from './pages/TellATale/TellATale';
 import Login from './pages/Login/login';
 import Register from './pages/Register/Register';
+import Dashboard from './pages/Dashboard/Dashboard/Dashboard';
 
 
 import AuthProvider from './contexts/AuthProvider';
@@ -32,6 +33,10 @@ function App() {
 
             <Route exact path='/register'>
               <Register />
+            </Route>
+
+            <Route exact path='/dashboard'>
+              <Dashboard />
             </Route>
 
           </Switch>
