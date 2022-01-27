@@ -49,6 +49,7 @@ const useFirebase = () => {
                 sendUserToDatabase(putData);
             }
             history.push(redirected_uri);
+            window.alert('Welcome');
         })
         .catch((error) => {
             if (error) {
@@ -98,6 +99,7 @@ const useFirebase = () => {
             const putData = {fullName: fullName, email: email};
             sendUserToDatabase(putData);
             history.push(redirected_uri);
+            window.alert('Welcome');
         })
         .catch((error) => { 
             if (error) {
