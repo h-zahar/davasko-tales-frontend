@@ -47,7 +47,7 @@ const UploadImage = () => {
                 <img className='img-fluid rounded-circle' src={user?.photoURL} alt="" />
             </div>
             <div style={{minHeight: '45vh'}} className="my-5 d-flex justify-content-center">
-                <form style={{maxWidth: '550px', minWidth: '380px'}} className="d-flex flex-column custom-form p-5 shadow-lg rounded" onSubmit={handleSubmit(onSubmit)}>
+                <form style={{width: '700px', minWidth: '280px'}} className="d-flex flex-column custom-form mx-md-5 mx-3 p-5 shadow-lg rounded" onSubmit={handleSubmit(onSubmit)}>
                     <h4 className="text-center mb-3">Tell your Tale :D</h4>
                     <p className="border-top mt-3 pt-3 mb-2 text-center fs-4">Rate!</p>
                     <Rating className="text-center mb-4 fs-5"
@@ -76,7 +76,7 @@ const UploadImage = () => {
                     <input className="my-2" placeholder="Category" {...register("category", { required: true})} />
                     {errors.category && <span className="mb-2 text-danger">Something's not correct</span>}
 
-                    <textarea rows={8} className="my-2" placeholder="Description" {...register("description", { required: true })} />
+                    <textarea rows={16} className="my-2" placeholder="Description" {...register("description", { required: true })} />
                     {errors.description && <span className="mb-2 text-danger">Something's not correct</span>}
 
                     {/* <input type="file" className="my-2" placeholder="Image URL" {...register("url", { required: true })} />
