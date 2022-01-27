@@ -5,6 +5,7 @@ import TellATale from './pages/TellATale/TellATale';
 import Login from './pages/Login/login';
 import Register from './pages/Register/Register';
 import Dashboard from './pages/Dashboard/Dashboard/Dashboard';
+import AdminRoute from './pages/AdminRoute/AdminRoute';
 
 
 import AuthProvider from './contexts/AuthProvider';
@@ -35,9 +36,9 @@ function App() {
               <Register />
             </Route>
 
-            <Route exact path='/dashboard'>
+            <AdminRoute exact path='/dashboard'>
               <Dashboard />
-            </Route>
+            </AdminRoute>
 
           </Switch>
         </Router>

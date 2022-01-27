@@ -6,7 +6,7 @@ import useAuth from '../../../hooks/useAuth';
 // import logo from '../../../logo.svg';
 
 const Header = () => {
-    const { user, logOut, isLoading } = useAuth();
+    const { user, logOut, isLoading, isAdmin } = useAuth();
     
     return (
         <div style={{position: 'sticky', top: '0', backgroundColor: 'rgba(255, 255, 255, 0.6)', zIndex: '2'}} >
@@ -50,7 +50,7 @@ const Header = () => {
 
 
                             {
-                               (!isLoading && user?.email) &&
+                               (!isLoading && isAdmin) &&
                                <Nav.Link as={NavLink} exact to="/dashboard">Dashboard</Nav.Link> 
                             }
                         

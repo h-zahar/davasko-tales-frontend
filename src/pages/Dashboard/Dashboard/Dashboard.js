@@ -3,7 +3,6 @@ import { useRouteMatch, Switch, Route } from 'react-router-dom';
 import DashHeader from '../DashHeader/DashHeader';
 import DashHome from '../DashPages/DashHome/DashHome';
 import MakeAdmin from '../DashPages/MakeAdmin/MakeAdmin';
-import AdminRoute from '../../../AdminRoute/AdminRoute';
 import Header from '../../Shared/Header/Header';
 
 const Dashboard = () => {
@@ -19,9 +18,9 @@ const Dashboard = () => {
                     <DashHome />
                 </Route>
 
-                <AdminRoute exact path={`${path}/make-admin`}>
+                <Route exact path={`${path}/make-admin`}>
                     <MakeAdmin />
-                </AdminRoute>
+                </Route>
 
             </Switch>
 
