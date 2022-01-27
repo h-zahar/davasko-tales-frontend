@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home/Home/Home';
+import TellATale from './pages/TellATale/TellATale';
 import Login from './pages/Login/login';
 import Register from './pages/Register/Register';
 
@@ -19,6 +20,10 @@ function App() {
 
             <Route exact path='/'>
               <Home />
+            </Route>
+
+            <Route exact path='/add'>
+              <TellATale />
             </Route>
 
             <Route exact path='/login'>
