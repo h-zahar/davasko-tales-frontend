@@ -20,7 +20,7 @@ const UploadImage = () => {
         data.traveler_email = user.email;
         data.traveler = user.displayName;
         data.rating = rating;
-        fetch('http://localhost:5000/tales', {
+        fetch('http://localhost:5000/blogs', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -79,7 +79,7 @@ const UploadImage = () => {
                     {errors.location && <span className="mb-2 text-danger">Something's not correct</span>}
 
                     <input className="my-2" placeholder="Image URL" {...register("url", { required: true })} />
-                    {errors.img_i && <span className="mb-2 text-danger">Something's not correct</span>}
+                    {errors.url && <span className="mb-2 text-danger">Something's not correct</span>}
 
                     <input className="my-2" placeholder="Title" {...register("title", { required: true})} />
                     {errors.title && <span className="mb-2 text-danger">Something's not correct</span>}

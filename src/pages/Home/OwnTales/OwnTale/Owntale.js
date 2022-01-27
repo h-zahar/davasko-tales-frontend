@@ -1,8 +1,7 @@
-
 import React from 'react';
 
 const OwnTale = (props) => {
-    const { _id, title, category, date, time, location, rating, description, isApproved } = props.mytale;
+    const { _id, title, url, category, date, time, location, rating, description, isApproved } = props.myTale;
     const { myTales, setMyTales } = props;
 
     const handleDelete = (id) => {
@@ -30,16 +29,22 @@ const OwnTale = (props) => {
     };
 
     return (
-        <div xs={12} sm={6} md={4} lg={3} className="col border d-flex justify-content-center py-3 mx-2 gy-2 shadow-lg">
-            <div>
+        <div xs={12} sm={6} md={4} lg={3} className="col d-flex justify-content-center py-3 mx-2 gy-2">
+            <div style={{maxWidth: '900px'}} className="border shadow-lg px-4 py-3">
                 {/* <h4>{title}</h4> */}
-                <p className="my-3 text-secondary">{_id}</p>
+                <p className="my-3 text-secondary">ID: {_id}</p>
                 <div>
-                    <p>{rating}</p>
-                    <h4 className="text-center">{title}</h4>
+                    <p>Rating: {rating}</p>
                     <p>{date} - {time}</p>
                     <p>Category: {category}</p>
                     <p>Location: {location}</p>
+                    <div className="d-flex justify-content-center my-5 py-4">
+                        <div style={{width: '90%'}}>
+                            <img className="w-100" src={url} alt="" />
+                        </div>
+                        
+                    </div>
+                    <h4 className="text-center mb-4">{title}</h4>
                     <p>{description}</p>
                 </div>
                 <div>
@@ -50,7 +55,7 @@ const OwnTale = (props) => {
                     }
                 </div>
                 <div>
-                    <button style={{background: 'none', border: 'none'}} onClick={() => handleDelete(_id)}><span className="text-danger">Cancel?</span></button>
+                    <button className="ps-0" style={{background: 'none', border: 'none'}} onClick={() => handleDelete(_id)}><span className="text-danger">Cancel?</span></button>
                 </div>
             </div>
         </div>

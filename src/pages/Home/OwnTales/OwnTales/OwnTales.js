@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../../../hooks/useAuth';
 import Header from '../../../Shared/Header/Header';
-import OwnTale from '../OwnTale/Owntale';
+import OwnTale from '../OwnTale/OwnTale';
 
 const OwnTales = () => {
     const { user } = useAuth();
     const [myTales, setMyTales] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/tales/${user?.email}`)
+        fetch(`http://localhost:5000/blogs/${user?.email}`)
         .then(res => res.json())
         .then(data => setMyTales(data))
         .catch(error => {
