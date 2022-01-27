@@ -11,6 +11,7 @@ import AdminRoute from './pages/AdminRoute/AdminRoute';
 import AuthProvider from './contexts/AuthProvider';
 import initializeAuthentication from './firebase/firebase.init';
 import OwnTales from './pages/Home/OwnTales/OwnTales/OwnTales';
+import Footer from './pages/Shared/Footer/Footer';
 
 initializeAuthentication();
 
@@ -46,6 +47,7 @@ function App() {
             </AdminRoute>
 
           </Switch>
+          <Footer />
         </Router>
       </AuthProvider>
     </>
