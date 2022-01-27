@@ -43,12 +43,23 @@ const UploadImage = () => {
     return (
         <div>
             <Header />
-            <div style={{marginTop:"-73px"}} className='text-center'>
-                <img className='img-fluid rounded-circle' src={user?.photoURL} alt="" />
+            <div style={{marginTop:"50px", marginBottom: '-50px'}} className='text-center'>
+                {
+                    user?.photoURL &&
+                    <img className='img-fluid rounded-circle' src={user?.photoURL} alt="" />
+                }
+
+                {
+                    !user?.photoURL &&
+                    <div style={{width: '50px', height: '50px', borderRadius: '50px', border: '1px solid rgba(0, 0, 0, 0.5)', padding: '38px'}} className="d-flex justify-content-center align-items-center">
+                    <i className="fas fa-user fs-1"></i>
+                    </div>
+                }
+                
             </div>
-            <div style={{minHeight: '45vh'}} className="my-5 d-flex justify-content-center">
+            <div style={{minHeight: '45vh'}} className="d-flex justify-content-center">
                 <form style={{width: '700px', minWidth: '280px'}} className="d-flex flex-column custom-form mx-md-5 mx-3 p-5 shadow-lg rounded" onSubmit={handleSubmit(onSubmit)}>
-                    <h4 className="text-center mb-3">Tell your Tale :D</h4>
+                    <h4 className="text-center mb-3 mt-4 pt-3">Tell your Tale :D</h4>
                     <p className="border-top mt-3 pt-3 mb-2 text-center fs-4">Rate!</p>
                     <Rating className="text-center mb-4 fs-5"
                             initialRating={rating}
