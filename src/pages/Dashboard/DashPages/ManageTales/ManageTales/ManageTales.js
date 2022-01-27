@@ -4,7 +4,7 @@ import DashHeader from '../../../DashHeader/DashHeader';
 
 const ManageTales = () => {
     return (
-        <div>
+        <div style={{minHeight: '30.2vh'}}>
             <Header />
         </div>
     )
