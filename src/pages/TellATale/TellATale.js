@@ -51,8 +51,10 @@ const UploadImage = () => {
 
                 {
                     !user?.photoURL &&
-                    <div style={{width: '50px', height: '50px', borderRadius: '50px', border: '1px solid rgba(0, 0, 0, 0.5)', padding: '38px'}} className="d-flex justify-content-center align-items-center">
-                    <i className="fas fa-user fs-1"></i>
+                    <div className="d-flex justify-content-center align-items-center">
+                        <div style={{width: '50px', height: '50px', borderRadius: '50px', border: '1px solid rgba(0, 0, 0, 0.5)', padding: '38px'}} className="d-flex justify-content-center align-items-center">
+                        <i className="fas fa-user fs-1"></i>
+                        </div>
                     </div>
                 }
                 

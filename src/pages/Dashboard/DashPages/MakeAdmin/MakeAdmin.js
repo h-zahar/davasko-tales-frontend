@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../../../hooks/useAuth';
+import Header from '../../../Shared/Header/Header';
 
 const MakeAdmin = () => {
     const { setIsAdmin } = useAuth();
@@ -27,6 +28,7 @@ const MakeAdmin = () => {
     };
     return (
         <div>
+            <Header />
             <p className="mt-5 text-center"><strong>Enter the Email of to be Admin</strong></p>
             <div className="d-flex justify-content-center mb-5">
                 <form onSubmit={handleSubmit(onSubmit)}>

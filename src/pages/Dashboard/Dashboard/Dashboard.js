@@ -1,15 +1,16 @@
 import React from 'react';
 import { useRouteMatch, Switch, Route } from 'react-router-dom';
 import DashHeader from '../DashHeader/DashHeader';
+import AddAsAdmin from '../DashPages/AddAsAdmin/AddAsAdmin';
 import DashHome from '../DashPages/DashHome/DashHome';
 import MakeAdmin from '../DashPages/MakeAdmin/MakeAdmin';
-import Header from '../../Shared/Header/Header';
+import ManageTales from '../DashPages/ManageTales/ManageTales/ManageTales';
+import MyTales from '../DashPages/MyTales/MyTales';
 
 const Dashboard = () => {
     const { path, url } = useRouteMatch();
     return (
         <div style={{minHeight: '50vh'}}>
-            <Header />
             <DashHeader url={url} />
 
             <Switch>
@@ -18,8 +19,20 @@ const Dashboard = () => {
                     <DashHome />
                 </Route>
 
-                <Route exact path={`${path}/make-admin`}>
+                <Route exact path={`${path}/make`}>
                     <MakeAdmin />
+                </Route>
+
+                <Route exact path={`${path}/manage`}>
+                    <ManageTales />
+                </Route>
+
+                <Route exact path={`${path}/add-as-admin`}>
+                    <AddAsAdmin />
+                </Route>
+
+                <Route exact path={`${path}/admin-tales`}>
+                    <MyTales />
                 </Route>
 
             </Switch>

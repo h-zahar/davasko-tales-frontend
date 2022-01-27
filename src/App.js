@@ -41,7 +41,7 @@ function App() {
               <Register />
             </Route>
 
-            <AdminRoute exact path='/dashboard'>
+            <AdminRoute path='/dashboard'>
               <Dashboard />
             </AdminRoute>
 

@@ -15,7 +15,7 @@ const OwnTales = () => {
             //     window.location.reload();
             // }
         });
-    }, []);
+    }, [user?.email]);
 
     return (
         <div style={{minHeight: '60vh'}}>

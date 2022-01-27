@@ -6,7 +6,7 @@ const DashHeader = ({ url }) => {
     const { isAdmin, isAdminLoading } = useAuth();
     return (
         <div>
-             <h2 style={{borderBottom: '1px solid rgba(255, 255, 255, 0.2)'}} className="text-center pt-3 pb-3 my-0 bg-light text-dark border"><Link style={{color: 'unset', textDecoration: 'unset'}} to={`${url}`}>
+             <h2 style={{borderBottom: '1px solid rgba(255, 255, 255, 0.2)'}} className="text-center pt-5 pb-3 my-1 bg-light text-dark border"><Link style={{color: 'unset', textDecoration: 'unset'}} to={`${url}`}>
                 {
                     !isAdminLoading &&
                     <span>Admin Panel</span>
@@ -23,7 +23,22 @@ const DashHeader = ({ url }) => {
 
                         {
                             !isAdminLoading &&
-                            <NavLink className="nav-link" exact to={`${url}/make-admin`}>Make Admin</NavLink>
+                            <NavLink className="nav-link" exact to={`${url}/make`}>Make Admin</NavLink>
+                        }
+
+                        {
+                            !isAdminLoading &&
+                            <NavLink className="nav-link" exact to={`${url}/manage`}>Manage Tales</NavLink>
+                        }
+
+                        {
+                            !isAdminLoading &&
+                            <NavLink className="nav-link" exact to={`${url}/add-as-admin`}>Add a Tale</NavLink>
+                        }
+
+                        {
+                            !isAdminLoading &&
+                            <NavLink className="nav-link" exact to={`${url}/admin-tales`}>My Tales</NavLink>
                         }
 
                     </div>
