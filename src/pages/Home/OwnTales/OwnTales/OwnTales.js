@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useAuth from '../../../../hooks/useAuth';
+import Header from '../../../Shared/Header/Header';
 import OwnTale from '../OwnTale/Owntale';
 
 const OwnTales = () => {
@@ -18,6 +19,7 @@ const OwnTales = () => {
 
     return (
         <div style={{minHeight: '60vh'}}>
+            <Header />
             <div className="container mb-5">
                 <h4 className="text-center my-4">My Tales</h4><hr />
                 <div className="row">

@@ -10,6 +10,7 @@ import AdminRoute from './pages/AdminRoute/AdminRoute';
 
 import AuthProvider from './contexts/AuthProvider';
 import initializeAuthentication from './firebase/firebase.init';
+import OwnTales from './pages/Home/OwnTales/OwnTales/OwnTales';
 
 initializeAuthentication();
 
@@ -26,6 +27,10 @@ function App() {
 
             <Route exact path='/add'>
               <TellATale />
+            </Route>
+
+            <Route exact path='/own'>
+              <OwnTales />
             </Route>
 
             <Route exact path='/login'>
