@@ -29,7 +29,7 @@ const OwnTale = (props) => {
     };
 
     return (
-        <div xs={12} sm={6} md={4} lg={3} className="col d-flex justify-content-center py-3 mx-2 gy-2">
+        <div className="col-12 d-flex justify-content-center py-3 mx-2 gy-2">
             <div style={{maxWidth: '900px'}} className="border shadow-lg px-4 py-3">
                 {/* <h4>{title}</h4> */}
                 <p className="my-3 text-secondary">ID: {_id}</p>
