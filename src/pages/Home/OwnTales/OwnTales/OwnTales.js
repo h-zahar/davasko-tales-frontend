@@ -7,7 +7,7 @@ const OwnTales = () => {
     const { user } = useAuth();
     const [myTales, setMyTales] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/blogs/${user?.email}`)
+        fetch(`https://api-davaskotales.herokuapp.com/blogs/${user?.email}`)
         .then(res => res.json())
         .then(data => setMyTales(data))
         .catch(error => {

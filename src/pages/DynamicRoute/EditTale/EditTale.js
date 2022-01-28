@@ -13,7 +13,7 @@ const EditTale = () => {
 
     const [oldTale, setOldTale] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/single/${id}`)
+        fetch(`https://api-davaskotales.herokuapp.com/single/${id}`)
         .then(res => res.json())
         .then(data => setOldTale(data));
     }, []);
@@ -25,7 +25,7 @@ const EditTale = () => {
         data.traveler = oldTale.traveler;
         data.rating = rating;
 
-        fetch('http://localhost:5000/blogs', {
+        fetch('https://api-davaskotales.herokuapp.com/blogs', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

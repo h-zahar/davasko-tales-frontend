@@ -6,7 +6,7 @@ const SingleTale = () => {
     const id = useParams();
     const [single, setSingle] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/single/${id.id}`)
+        fetch(`https://api-davaskotales.herokuapp.com/single/${id.id}`)
         .then(res => res.json())
         .then(data => setSingle(data));
     }, [id]);

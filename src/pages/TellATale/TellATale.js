@@ -20,7 +20,7 @@ const UploadImage = () => {
         data.traveler_email = user.email;
         data.traveler = user.displayName;
         data.rating = rating;
-        fetch('http://localhost:5000/blogs', {
+        fetch('https://api-davaskotales.herokuapp.com/blogs', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

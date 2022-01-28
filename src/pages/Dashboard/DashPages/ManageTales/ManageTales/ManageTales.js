@@ -5,7 +5,7 @@ import ManageTale from '../ManageTale/ManageTale';
 const ManageTales = () => {
     const [allBlogs, setAllBlogs] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/all-blogs')
+        fetch('https://api-davaskotales.herokuapp.com/all-blogs')
         .then(res => res.json())
         .then(data => setAllBlogs(data));
     }, []);

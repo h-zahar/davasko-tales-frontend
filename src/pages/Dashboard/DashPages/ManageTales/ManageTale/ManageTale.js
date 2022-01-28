@@ -6,7 +6,7 @@ const ManageTale = (props) => {
     const { allBlogs, setAllBlogs } = props;
 
     const handleApproval = (id) => {
-        fetch(`http://localhost:5000/blogs`, {
+        fetch(`https://api-davaskotales.herokuapp.com/blogs`, {
             method: 'PUT',
             headers: {
                 'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ const ManageTale = (props) => {
         if(!window.confirm('Are you sure to cancel?')) {
             return;
         }
-        fetch(`http://localhost:5000/blogs/${id}`, {
+        fetch(`https://api-davaskotales.herokuapp.com/blogs/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'aplplication/json'

@@ -9,7 +9,7 @@ const Tales = () => {
     const size = 10;
 
     useEffect(() => {
-        fetch(`http://localhost:5000/blogs?page=${page}&&size=${size}`)
+        fetch(`https://api-davaskotales.herokuapp.com/blogs?page=${page}&&size=${size}`)
         .then(response => response.json())
         .then(data => {
             setFeatured(data.blogs);
