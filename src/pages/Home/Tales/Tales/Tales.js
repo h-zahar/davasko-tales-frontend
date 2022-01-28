@@ -11,7 +11,7 @@ const FeaturedServices = () => {
 
     return (
         <div>
-            <div className="bg-lighdow my-5">
+            <div id="tales" className="bg-lighdow my-5">
                 <h2 className="text-center mt-5 mb-3 pt-5 pb-4">Travelers Tale!</h2>
                 <div className="d-flex justify-content-center flex-wrap">
                     {

@@ -13,7 +13,7 @@ const Banner = () => {
                             <p className="mb-0">We call all the travelers, Davasko!</p>
                             <h1 className="mt-5 mb-4">Welcome to <span className="brand">DavaskoTales</span></h1>
                             <p>Your Travel Blog Sharing Platform</p>
-                            <Link style={{textDecoration: 'unset', color: 'unset'}} to="/#tales"><button className="my-4 btn-explore rounded">Read Tales!</button></Link>
+                            <a style={{textDecoration: 'unset', color: 'unset'}} href="/#tales"><button className="my-4 btn-explore rounded">Read Tales!</button></a>
                         </div>
                     </Container>
                 </Carousel.Item>
@@ -23,7 +23,7 @@ const Banner = () => {
                             <p className="mb-0">Fell free to spell your tales :3</p>
                             <h1 className="mt-5 mb-4">Welcome to <span className="brand">DavaskoTales</span></h1>
                             <p>Your Travel Blog Sharing Platform</p>
-                            <Link style={{textDecoration: 'unset', color: 'unset'}} to="/#tales"><button className="my-4 btn-explore rounded">Read Tales</button></Link>
+                            <a style={{textDecoration: 'unset', color: 'unset'}} href="/#tales"><button className="my-4 btn-explore rounded">Read Tales!</button></a>
                         </div>
                     </Container>
                 </Carousel.Item>
@@ -33,7 +33,7 @@ const Banner = () => {
                             <p className="mb-0">Travel through davasko's tales :D</p>
                             <h1 className="mt-5 mb-4">Welcome to <span className="brand">DavaskoTales</span></h1>
                             <p>Your Travel Blog Sharing Platform</p>
-                            <Link style={{textDecoration: 'unset', color: 'unset'}} to="/#tales"><button className="my-4 btn-explore rounded">Read Tales</button></Link>
+                            <a style={{textDecoration: 'unset', color: 'unset'}} href="/#tales"><button className="my-4 btn-explore rounded">Read Tales!</button></a>
                         </div>
                     </Container>
                 </Carousel.Item>
