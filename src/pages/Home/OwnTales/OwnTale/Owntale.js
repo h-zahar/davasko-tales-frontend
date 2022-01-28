@@ -9,7 +9,7 @@ const OwnTale = (props) => {
         if(!window.confirm('Are you sure to cancel?')) {
             return;
         }
-        fetch(`http://localhost:5000/blogs/${id}`, {
+        fetch(`https://api-davaskotales.herokuapp.com/blogs/${id}`, {
             method: 'DELETE',
             headers: {
                 'Content-Type': 'application/json'
