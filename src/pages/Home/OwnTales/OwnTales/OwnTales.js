@@ -25,7 +25,7 @@ const OwnTales = () => {
                 <div className="row">
                     {
                         myTales.map(myTale => {
-                            return <OwnTale key={myTale._id} myTale={myTale} myTales={myTales} setMytales={setMyTales} />
+                            return <OwnTale key={myTale._id} myTale={myTale} myTales={myTales} setMyTales={setMyTales} />
                         })
                     }
                 </div>
