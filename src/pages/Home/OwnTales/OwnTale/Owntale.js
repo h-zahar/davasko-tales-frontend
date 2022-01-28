@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const OwnTale = (props) => {
     const { _id, title, url, category, date, time, location, rating, description, isApproved } = props.myTale;
@@ -54,6 +55,11 @@ const OwnTale = (props) => {
                         <p className="my-3">Status: <span className="text-success">Approved</span></p>
                     }
                 </div>
+
+                {/* <Link to={`/edit/${_id}`} style={{color: 'unset', textDecoration: 'none'}}>
+                    <button className="ps-0 mb-2 text-primary" style={{background: 'none', border: 'none'}}>Edit</button>
+                </Link> */}
+
                 <div>
                     <button className="ps-0" style={{background: 'none', border: 'none'}} onClick={() => handleDelete(_id)}><span className="text-danger">Cancel?</span></button>
                 </div>

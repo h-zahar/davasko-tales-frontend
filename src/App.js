@@ -13,6 +13,7 @@ import initializeAuthentication from './firebase/firebase.init';
 import OwnTales from './pages/Home/OwnTales/OwnTales/OwnTales';
 import Footer from './pages/Shared/Footer/Footer';
 import SingleTale from './pages/DynamicRoute/SingleTale/SingleTale';
+import EditTale from './pages/DynamicRoute/EditTale/EditTale';
 
 initializeAuthentication();
 
@@ -45,6 +46,10 @@ function App() {
 
             <Route exact path='/single/:id'>
               <SingleTale />
+            </Route>
+
+            <Route exact path='/edit/:id'>
+              <EditTale />
             </Route>
 
             <AdminRoute path='/dashboard'>
