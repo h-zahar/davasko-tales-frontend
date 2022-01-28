@@ -5,6 +5,7 @@ import TellATale from './pages/TellATale/TellATale';
 import Login from './pages/Login/login';
 import Register from './pages/Register/Register';
 import Dashboard from './pages/Dashboard/Dashboard/Dashboard';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
 import AdminRoute from './pages/AdminRoute/AdminRoute';
 
 
@@ -28,13 +29,13 @@ function App() {
               <Home />
             </Route>
 
-            <Route exact path='/add'>
+            <PrivateRoute exact path='/add'>
               <TellATale />
-            </Route>
+            </PrivateRoute>
 
-            <Route exact path='/own'>
+            <PrivateRoute exact path='/own'>
               <OwnTales />
-            </Route>
+            </PrivateRoute>
 
             <Route exact path='/login'>
               <Login />
@@ -44,9 +45,9 @@ function App() {
               <Register />
             </Route>
 
-            <Route exact path='/single/:id'>
+            <PrivateRoute exact path='/single/:id'>
               <SingleTale />
-            </Route>
+            </PrivateRoute>
 
             <Route exact path='/edit/:id'>
               <EditTale />

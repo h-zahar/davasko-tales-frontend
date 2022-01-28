@@ -1,0 +1,10 @@
+.btn-pagination {
+    background-color: azure;
+    border: 1px solid rgba(0, 0, 0, 0.637);
+    padding: 5px 10px;
+    border-radius: 10%;
+}
+
+.pagination .selected {
+    background-color: rgb(104, 104, 177);
+}
