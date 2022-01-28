@@ -12,6 +12,7 @@ import AuthProvider from './contexts/AuthProvider';
 import initializeAuthentication from './firebase/firebase.init';
 import OwnTales from './pages/Home/OwnTales/OwnTales/OwnTales';
 import Footer from './pages/Shared/Footer/Footer';
+import SingleTale from './pages/DynamicRoute/SingleTale/SingleTale';
 
 initializeAuthentication();
 
@@ -40,6 +41,10 @@ function App() {
 
             <Route exact path='/register'>
               <Register />
+            </Route>
+
+            <Route exact path='/single/:id'>
+              <SingleTale />
             </Route>
 
             <AdminRoute path='/dashboard'>

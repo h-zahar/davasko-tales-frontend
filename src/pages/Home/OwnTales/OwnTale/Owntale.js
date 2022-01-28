@@ -11,7 +11,7 @@ const OwnTale = (props) => {
         fetch(`http://localhost:5000/blogs/${id}`, {
             method: 'DELETE',
             headers: {
-                'Content-Type': 'aplplication/json'
+                'Content-Type': 'application/json'
             }
         })
         .then(res => res.json())

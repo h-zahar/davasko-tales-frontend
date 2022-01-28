@@ -10,7 +10,7 @@ const Tale = (props) => {
     
     return (
         <div className="mx-3 mt-3 mb-4">
-            <Link style={{color: 'unset', textDecoration: 'none'}}>
+            <Link to={`/single/${_id}`} style={{color: 'unset', textDecoration: 'none'}}>
                 <Card className="border-0 shadow rounded" style={{ width: '15rem' }}>
                     <Card.Img variant="top" src={url} style={{ height: '10rem', borderBottom: '1px solid #93969e' }} />
                     <Card.Body>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Tale from '../Tale/Tale';
 
-const FeaturedServices = () => {
+const Tales = () => {
     const [featured, setFeatured] = useState([]);
     useEffect(() => {
         fetch('http://localhost:5000/blogs')
@@ -23,4 +23,4 @@ const FeaturedServices = () => {
     )
 }
 
-export default FeaturedServices;
+export default Tales;
