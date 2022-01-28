@@ -1,4 +1,4 @@
-# intera-frontend
+# davasko-tales-frontend
 
 Live Website: <a href="https://davaskotales.web.app/">Click Here</a><br />
 
